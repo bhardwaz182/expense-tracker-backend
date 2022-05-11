@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node .",
+    "seed:local": "node data/seed.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.0",
+    "mongoose": "^5.12.15"
+  }
+}

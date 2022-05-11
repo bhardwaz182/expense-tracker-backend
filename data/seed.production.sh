@@ -1,0 +1,1 @@
+mongoimport --uri="mongodb+srv://fsdeploymentdemoadmin:password%2123@cluster0.egvch.mongodb.net/techDB?ssl=true&authSource=admin" --collection=workshops --drop --file="seed/workshops.json" --jsonArray
