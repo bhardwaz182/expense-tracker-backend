@@ -6,9 +6,9 @@ mongoose.set('returnOriginal', false);
 // create models
 require( '../models/Workshop' );
 
-const { DB_HOST, DB_NAME, NODE_ENV } = process.env
+const { DB_HOST,DB_USER, DB_PASSWORD, DB_NAME, NODE_ENV } = process.env
 
-const connectionStr = NODE_ENV === 'development' ?`mongodb://${DB_HOST}/${DB_NAME}`:'';
+const connectionStr = NODE_ENV === 'development' ?`mongodb://${DB_HOST}/${DB_NAME}`:`mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}?retryWrites=true&w=majority`;
 
 console.log( connectionStr );
 
